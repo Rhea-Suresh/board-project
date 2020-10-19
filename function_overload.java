@@ -14,6 +14,7 @@ public class function_overload
             }
         System.out.println ("Frequency of " +ch+ " = " + frequency);
     }
+    
     void check (String s1)
     {
         int i = 0;
@@ -24,20 +25,21 @@ public class function_overload
         {
             ch1 = s1.charAt(j);
             switch (ch1)
-	 {
-	  case 'a' :
-	  case 'e' :
-	  case 'i' :
-	  case 'o' :
-	  case 'u' :
-	  case 'A' :
-	  case 'E' :
-	  case 'I' :
-	  case 'O' :	
-	  case 'U' :i=1;
-		    System.out.println(ch1); 			 
-	 }	
+	   {
+	      case 'a' :
+	      case 'e' :
+	      case 'i' :
+	      case 'o' :
+	      case 'u' :
+	      case 'A' :
+	      case 'E' :
+	      case 'I' :
+	      case 'O' :	
+	      case 'U' :i=1;
+		        System.out.println(ch1); 			 
+	   }	
 	}
+	
 	if(i==0)
 	{
 		System.out.println("There are no vowels in a string");

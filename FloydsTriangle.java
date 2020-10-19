@@ -1,20 +1,36 @@
 //Question 1 of board project
+import java.util.Scanner;
 public class FloydsTriangle
 {
-    int row;// row is a variable to store the number of rows 
-    void initialize (int r)
+    int n;
+    void getData ()
     {
-        row = r; 
-        int n = 1;
-        for (int i = 1; i<=row; i++)
+        Scanner sc = new Scanner (System.in);
+        System.out.println ("Enter the number or rows for the pattern");
+        n = sc.nextInt ();
+    }
+    
+    void GeneratePattern ()
+    {
+        int count = 0;
+        for (int i = 1; i<=n; i++) //Number of rows
         {
-            for(int a = 1; a<=i; a++)
+            for (int j = 1; j<=i; j++)//Number of elements in each row
             {
-                System.out.print (n+" ");
-                n++;
+                count ++;
+                System.out.print (" " + count );//Pattern Ingridient
             }
-          System.out.println();
+            System.out.println ();//Moves the cursor to the next line
         }
     }
+    
+    public static void main ()
+    {
+        FloydsTriangle obj = new FloydsTriangle ();
+        obj.getData ();
+        obj.GeneratePattern();
+    }
 }
+
+        
             
