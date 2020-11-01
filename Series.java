@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Series
 {
     
-    void series ()
+    void series1 ()
     {
         int sum = 0;
         for(int i=2; i<=20; i+=2)
@@ -17,19 +17,28 @@ public class Series
                sum = sum-i;
            }
         }
-        System.out.println("The sum is "+sum);
+        System.out.println("The sum of the first series is "+sum);
     }
     
-    void series (int x)
+    void series2 ()
     {
+        Scanner sc = new Scanner (System.in);
+        System.out.println ("Enter the value of x for the second series:");
+        int x = sc.nextInt ();
         int sum = 0;
         
         for (int i = 2; i<=20; i=i+3)
         {
             sum = sum + x/i;
         }
-        System.out.println ("The sum of the series is " +sum);
+        System.out.println ("The sum of the second series is " +sum);
     }
     
+    public static void main ()
+    {
+        Series obj = new Series ();
+        obj.series1 ();
+        obj.series2 ();
+    }
 }
         

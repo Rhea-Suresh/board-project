@@ -20,22 +20,18 @@ public class function_overload
         int i = 0;
         char ch1;
         System.out.println ("The sentence is: " +s1);
+        String s2 = s1.toLowerCase ();
         System.out.println ("The vowels in the senetence are:");
-        for (int j = 0; j<s1.length(); j++)
+        for (int j = 0; j<s2.length(); j++)
         {
-            ch1 = s1.charAt(j);
+            ch1 = s2.charAt(j);
             switch (ch1)
 	   {
 	      case 'a' :
 	      case 'e' :
 	      case 'i' :
 	      case 'o' :
-	      case 'u' :
-	      case 'A' :
-	      case 'E' :
-	      case 'I' :
-	      case 'O' :	
-	      case 'U' :i=1;
+	      case 'u' :i=1;
 		        System.out.println(ch1); 			 
 	   }	
 	}

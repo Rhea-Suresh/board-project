@@ -1,30 +1,31 @@
 // Question 7 of Board Project
+import java.util.Scanner;
 public class Student
 {
-    String n;
-    int roll;
-    double eng, hin, math, sci, comp, avg, percent;
-    void initialize (String name, int roll_no, double english, double hindi, double maths, double science, double computer)
+    double percent, marks;
+    int roll_no;
+    String name;
+    
+    void getData ()
     {
-        n = name;
-        roll = roll_no;
-        eng = english;
-        hin = hindi;
-        math = maths;
-        sci = science;
-        comp = computer;
-        
+        Scanner sc = new Scanner (System.in);
+        System.out.println ("Enter the name of the student");
+        name = sc.nextLine ();
+        System.out.println ("Enter the roll number of the student");
+        roll_no = sc.nextInt ();
+        System.out.println ("Enter the marks scored in 5 subjects");
+        marks = sc.nextDouble ();
     }
     
     void calculate ()
     {
-        percent = ((hin + eng + sci + math + comp) * 100)/500;
+        percent =  (marks/500)*100;
     }
     
     void allotment()
     {
-        System.out.println("The name of the student is "+n);
-        System.out.println ("The Roll Number of the student is "+roll);
+        System.out.println("The name of the student is "+name);
+        System.out.println ("The Roll Number of the student is "+roll_no);
         if (percent>=90)
         {
             System.out.println("The stream assigned is Science with Computers.");
@@ -45,6 +46,14 @@ public class Student
         {
            System.out.println("The student is not applicable for any stream.");
         }
+    }
+    
+    public static void main ()
+    {
+        Student obj = new Student ();
+        obj.getData ();
+        obj.calculate ();
+        obj.allotment ();
     }
 }
     

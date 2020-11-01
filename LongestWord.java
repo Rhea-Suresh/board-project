@@ -18,6 +18,7 @@ public class LongestWord
         String maxw = "";
         char ch;
         int maxl = 0; 
+        int p;
         for (int i = 0; i<len; i++)
         {
             ch = str.charAt (i);//extracting characters of the string one at a time
@@ -27,7 +28,7 @@ public class LongestWord
             }
             else
             {
-                int p = x.length ();
+                p = x.length ();
                 if (p >= maxl)//checking for maximum length
                 {
                     maxl = p;
