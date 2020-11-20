@@ -6,9 +6,11 @@ public class Series
     void series1 ()
     {
         int sum = 0;
+        
         for(int i=2; i<=20; i+=2)
         {
-           if (i % 4 != 0)
+           
+            if (i % 4 != 0)
            {
              sum = sum+i;
            }
@@ -16,7 +18,9 @@ public class Series
            {
                sum = sum-i;
            }
+           
         }
+        
         System.out.println("The sum of the first series is "+sum);
     }
     
@@ -31,6 +35,7 @@ public class Series
         {
             sum = sum + x/i;
         }
+        
         System.out.println ("The sum of the second series is " +sum);
     }
     

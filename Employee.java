@@ -1,6 +1,6 @@
 //question number 2 of board project
 import java.util.Scanner;
-public class employee
+public class Employee
 {
     float base_salary, HRA;
     
@@ -25,7 +25,7 @@ public class employee
         System.out.println ("Enter the name of the employee:");
         String name = sc.next ();
         
-        employee obj = new employee();
+        Employee obj = new Employee();
         obj.getData ();
         
         System.out.println ("The name of the employee is " +name);
