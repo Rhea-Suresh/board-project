@@ -1,4 +1,4 @@
-//question number 2 of board project
+// Question Number 2 of Board Project
 import java.util.Scanner;
 public class Employee
 {
