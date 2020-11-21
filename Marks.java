@@ -5,6 +5,7 @@ public class Marks
     int [] Rollno, Phy, Chem, Bio;
     String [] Names;
     int n;
+    double avg;
     
     Marks ()
     {
@@ -50,7 +51,7 @@ public class Marks
         for (int i = 0; i<=Names.length-1; i++)
         {
             double total = (Bio[i] + Chem[i] + Phy[i]);
-            double avg = total/3;
+            avg = total/3;
             System.out.println ("The average marks of " +Names[i]+ " is " +avg);
             
             if ((avg>=85) && (avg<=100))
