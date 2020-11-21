@@ -47,13 +47,10 @@ public class Marks
     void Calculate ()
     {
         
-        for (int i = 0; i<n; i++)
+        for (int i = 0; i<=Names.length-1; i++)
         {
-            int m1 = Bio[i];
-            int m2 = Chem[i];
-            int m3 = Phy[i];
-            int total = m1 + m2 + m3;
-            double avg = total/3;
+            double total = (Bio[i] + Chem[i] + Phy[i]);
+            double avg = (total)/3;
             System.out.println ("The average marks of " +Names[i]+ " is " +avg);
             
             if ((avg>=85) && (avg<=100))
