@@ -37,11 +37,11 @@ public class Marks
              
         System.out.println ("Enter the marks of the students in chemistry");
         for (int i = 0; i<=Rollno.length-1; i++)
-             Rollno [i] = sc.nextInt ();
+             Chem [i] = sc.nextInt ();
              
         System.out.println ("Enter the marks of the students in physics");
         for (int i = 0; i<=Rollno.length-1; i++)
-             Rollno [i] = sc.nextInt ();
+             Phy [i] = sc.nextInt ();
     }
     
     void Calculate ()
@@ -50,7 +50,7 @@ public class Marks
         for (int i = 0; i<=Names.length-1; i++)
         {
             double total = (Bio[i] + Chem[i] + Phy[i]);
-            double avg = (total)/3;
+            double avg = total/3;
             System.out.println ("The average marks of " +Names[i]+ " is " +avg);
             
             if ((avg>=85) && (avg<=100))
