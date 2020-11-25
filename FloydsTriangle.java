@@ -6,7 +6,7 @@ public class FloydsTriangle
     void getData ()
     {
         Scanner sc = new Scanner (System.in);
-        System.out.println ("Enter the number or rows for the pattern");
+        System.out.println ("Enter the number of rows for the pattern");
         n = sc.nextInt ();
     }
     

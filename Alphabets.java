@@ -23,7 +23,7 @@ public class Alphabets
         {
             for (int j = 0; j<=chArray.length-2; j++)
             {
-                if (chArray[j] > chArray[j+1])
+                if (chArray[j] < chArray[j+1])
                 {
                     temp = chArray[j];
                     chArray[j] = chArray[j+1];
@@ -36,7 +36,7 @@ public class Alphabets
     
     void Display ()
     {
-        System.out.print ("Ascending order: ");
+        System.out.print ("Descending order: ");
         for (int i = 0; i<=chArray.length-1; i++)
              System.out.print (chArray[i]);
     }

@@ -7,7 +7,6 @@ public class BankDeposit
         System.out.println ("What would you like to do?");
         System.out.println ("1. To apply for Term Deposit");
         System.out.println ("2. To apply for Recurring Deposit");
-        System.out.println ("Enter any number other than 1 or 2 to exit");
     }
     
     void TermDeposit ()
@@ -58,7 +57,8 @@ public class BankDeposit
                         break;
                 case 2: obj.RecurringDeposit();
                         break;
-                default: return;
+                default: System.out.println ("Incorrect selection");
+                         return;
             }
             
             System.out.println ("Would you like to continue [y/n]?");

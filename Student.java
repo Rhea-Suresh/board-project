@@ -24,28 +24,18 @@ public class Student
     
     void allotment()
     {
-        System.out.println("The name of the student is "+name);
+        System.out.println("The Name of the student is "+name);
         System.out.println ("The Roll Number of the student is "+roll_no);
         if (percent>=90)
-        {
             System.out.println("The stream assigned is Science with Computers.");
-        }
         else if ((percent>=80)&&(percent<=89))
-        {
             System.out.println("The stream assigned is Science without Computers.");
-        }
         else if ((percent>=70)&&(percent<=79))
-        {
             System.out.println("The stream assigned is Commerce with Maths.");
-        }
         else if ((percent>=60)&&(percent<=69))
-        {
             System.out.println("The stream assigned is Commerce without Maths.");
-        }
         else
-        {
            System.out.println("The student is not applicable for any stream.");
-        }
     }
     
     public static void main ()

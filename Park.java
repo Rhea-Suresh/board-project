@@ -16,9 +16,9 @@ public class Park
     void Input ()
     {
         Scanner sc = new Scanner (System.in);
-        System.out.println ("Enter the age of the person");
+        System.out.println ("Enter the age of the visitor");
         Age = sc.nextInt ();
-        System.out.println ("Enter the Entry Fee for the person");
+        System.out.println ("Enter the Entry Fee for the visitor");
         EntryFee = sc.nextDouble ();
     }
     
@@ -37,10 +37,10 @@ public class Park
     
     void Display ()
     {
-        System.out.println ("The Age of the customer is " +Age);
-        System.out.println ("The Entry Fee for the customer is " +EntryFee);
-        System.out.println ("The Discount for the customer is " +Discount);
-        System.out.println ("The Amount to be paid by the customer is " +Amount);
+        System.out.println ("The Age of the visitor is " +Age);
+        System.out.println ("The Entry Fee for the visitor is " +EntryFee);
+        System.out.println ("The Discount for the visitor is " +Discount);
+        System.out.println ("The Amount to be paid by the visitor is " +Amount);
     }
     
     public static void main ()

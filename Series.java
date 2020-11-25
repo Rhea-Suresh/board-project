@@ -5,7 +5,7 @@ public class Series
     
     void series1 ()
     {
-        int sum = 0;
+       double sum = 0;
         
         for(int i=2; i<=20; i+=2)
         {
@@ -29,7 +29,7 @@ public class Series
         Scanner sc = new Scanner (System.in);
         System.out.println ("Enter the value of x for the second series:");
         int x = sc.nextInt ();
-        int sum = 0;
+        double sum = 0;
         
         for (int i = 2; i<=20; i=i+3)
         {

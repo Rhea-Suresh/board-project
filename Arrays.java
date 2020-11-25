@@ -31,7 +31,8 @@ public class Arrays
     
     void display ()
     {
-        System.out.print ("The elements larger than the average of the array are:");
+        System.out.println ("The average of the 10 elements in the array are " +avg);
+        System.out.print ("Hence, the elements larger than the average of the array are:");
         for (int i = 0; i<=dArray.length-1; i++)
         {
             if (dArray[i] > avg)

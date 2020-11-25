@@ -6,7 +6,7 @@ public class Patterns
     {
         System.out.println ("What would you like to do?");
         System.out.println ("1. To print a triangle with numbers");
-        System.out.println ("2. To print a inverted triangle with alphabets");
+        System.out.println ("2. To print a inverted triangle with only one number");
         System.out.println ("Enter any number other than 1 or 2 to exit");
     }
     
@@ -32,21 +32,21 @@ public class Patterns
     {
         Scanner sc = new Scanner (System.in);
         System.out.println ("Enter the rows of triangle");
+        int r = sc.nextInt ();
+        System.out.println ("Enter the number to be printed");
         int n = sc.nextInt ();
-        int num = n;
         
-        for (int j = 1; j<=num; j++)
+        for (int i = r; i>=1; i--)
         {
-           char ch = 97;  
-            for (int i = 1; i<=n; i++)
+           for (int j = 1; j<=r; j++)
            {
-               System.out.print (" " + ch);
-               ch ++;
+               System.out.print (" " +n+ " ");
+           
            }
-           n = n-1;
+           r--;
            System.out.println ();
         }
-    }
+     }
     
     public static void main ()
     {
